@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha o Treino</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section id="escolha">
+            <div id="cabeçalho">
+                <h1>Treino do dia</h1>
+                <p>Escolha o seu treino</p>
+                <form action="escolha.js" method="post" autocomplete="on">
+                    <div id="formulario">
+                        <label for="itreino"></label>
+                        <select name="treino" id="itreino">
+                            <option value="" selected>--- Escolha ---</option>
+                            <optgroup label="Treino do dia">
+                                <option value="Dia1">Costas e Biceps</option>
+                                <option value="Dia1">Peito e Triceps</option>
+                                <option value="Dia1">Perna Completa e Panturrilha</option>
+                                <option value="Dia1">Ombro e Abdominal</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

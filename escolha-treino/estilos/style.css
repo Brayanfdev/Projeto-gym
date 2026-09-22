@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores 
+    Branco:
+    Preto:
+    Vermelho Escuro: #950606
+    Vermelho Intenso: #470303
+    Vermelho Vivo: #CF0808
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #470303;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+}
+
+section#escolha{
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 320px;
+    padding: 10px;
+    text-align: center;
+}
+
+div#cabeçalho > h1{
+    /**/
+}
+
+div#cabeçalho > p{
+    margin: 8px 0px;
+}
