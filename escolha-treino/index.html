@@ -9,14 +9,14 @@
 <body>
     <main>
         <section id="escolha">
-            <div id="cabeçalho">
+            <div id="cabecalho">
                 <h1>Treino do dia</h1>
-                <p>Escolha o seu treino</p>
+                <p>Escolha o seu treino do dia</p>
                 <form action="escolha.js" method="post" autocomplete="on">
                     <div id="formulario">
                         <label for="itreino"></label>
                         <select name="treino" id="itreino">
-                            <option value="" selected>--- Escolha ---</option>
+                            <option class="campo" value="" selected>---- Escolha ----</option>
                             <optgroup label="Treino do dia">
                                 <option value="Dia1">Costas e Biceps</option>
                                 <option value="Dia1">Peito e Triceps</option>
@@ -27,6 +27,7 @@
                     </div>
                     <input type="submit" value="Entrar">
                 </form>
+                <a href="#">Crie lista de treino</a>
             </div>
         </section>
     </main>

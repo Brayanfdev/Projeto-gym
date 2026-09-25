@@ -42,10 +42,51 @@ section#escolha{
     text-align: center;
 }
 
-div#cabeçalho > h1{
-    /**/
+div#cabecalho{
+    margin-top: 30px;
 }
 
-div#cabeçalho > p{
+div#cabecalho > h1{
+  font-size: 2.2em;  
+}
+
+div#cabecalho > p{
     margin: 8px 0px;
+}
+
+section#escolha > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > select{
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border-radius: 15px;
+
+}
+
+div#formulario > select > option.campo{
+    text-align: center;
+}
+
+form > input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #950606;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+div#cabecalho > a{
+    display: block;
+    text-decoration: underline;
+    color: #950606;
+    margin: 25px;
 }
