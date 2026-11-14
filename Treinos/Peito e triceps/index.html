@@ -3,110 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilo/style.css">
-    <title>Peito e triceps</title>
+    <link rel="stylesheet" href="../estilo/treino.css">
+    <title>Costas e Bíceps</title>
 </head>
 <body>
-    <!--<h1>Treino Peito + triceps</h1>
-    <h2>Peito</h2>
-    <ul disck>
-        <li><strong>Supino banco 45°</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: 2x / 1x 8a10 1x 10a12 1x 12a15</p>
-        <li><strong>Supino reto (aparelho)</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: 2x / 1x 8a10 1x 10a12 1x 12a15</p>
-        <li><strong>Supino declinado (aparelho)</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: Não</p>
-        <li><strong>Voador</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: Não</p>
-        <li>Serrote</li>
-        <p>Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: Não</p>
-    </ul>
-    <h2>triceps</h2>
-    <ul>
-        <li><strong>Triceps Barra</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10 </p>
-        <p>Drop: 2x / 1x 8a10 1x 10a12 1x 12a15 </p>
-        <li><strong>Triceps corda</strong></li>
-        <p>Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: Não</p>
-        <li><strong>Triceps Testa ou francês</strong></li>
-        <p>Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</p>
-        <p>Drop: Não</p>
-    </ul>-->
+    <main class="treino">
+        <h1 id="titulo">Peito e Tríceps</h1>
 
-    <div id="container">
-        <table>
-            <caption>Treino Peito + Triceps</caption>
+        <table aria-labelledby="titulo">
             <thead>
                 <tr>
-                    <th colspan="3">Peito</th>
-                </tr>
-                <tr>
-                    <th>Exercícios</th>
-                    <th class="center">Rep/Drop</th>
+                    <th scope="col">Exercício</th>
+                    <th scope="col">Séries e repetições</th>
+                    <th scope="col">Drop</th>
                 </tr>
             </thead>
+
             <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Peito</th></tr>
                 <tr>
-                    <td rowspan="2">Supino inclinado Banco 45°</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <th scope="row">Supino inclinado máquina ou alter</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12</td>
+                    <td data-label="Drop">2 drops: 1x 8a10, 1x 10a12, 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
+                    <th scope="row">Supino reto na máquina</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <td data-label="Drop">2 drops: 1x 8a10, 1x 10a12, 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Supino reto (Maquina)</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
+                    <th scope="row">Supino declinado</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Supino declinado</td>
-                    <td class="center">Rep: 1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <th scope="row">Voador</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Tríceps</th></tr>
+                <tr>
+                    <th scope="row">Tríceps na barra</th>
+                    <td data-label="Séries e reps">1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <td data-label="Drop">2 drops: 1x 8a10, 1x 10a12, 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td class="center">Sem drop</td>
+                    <th scope="row">Tríceps corda</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Voador</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <th colspan="3">Triceps</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">Triceps Barra</td>
-                    <td class="center">Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                </tr>
-                <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Triceps corda</td>
-                    <td class="center">Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Triceps Testa ou francês</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Tríceps frânces</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop/ até a falha em todas</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <a class="retorna" href="../costas e biceps/index.html">Voltar</a>
-    <a class="avanca" href="../perna e panturrilha/index.html">Próximo</a>
+
+        <nav class="navegacao" aria-label="Navegação entre treinos">
+            <a class="retorna" href="../../escolha-treino/index.html">Voltar</a>
+            <a class="avanca" href="../perna e panturrilha/index.html">Próximo</a>
+        </nav>
+    </main>
 </body>
 </html>

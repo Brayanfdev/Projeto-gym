@@ -8,28 +8,57 @@
 </head>
 <body>
     <main>
-        <section id="escolha">
-            <div id="cabecalho">
+        <section class="painel">
+            <header>
                 <h1>Treino do dia</h1>
-                <p>Escolha o seu treino do dia</p>
-                <form action="escolha.js" method="post" autocomplete="on">
-                    <div id="formulario">
-                        <label for="itreino"></label>
-                        <select name="treino" id="itreino">
-                            <option class="campo" value="" selected>---- Escolha ----</option>
-                            <optgroup label="Treino do dia">
-                                <option value="Dia1">Costas e Biceps</option>
-                                <option value="Dia1">Peito e Triceps</option>
-                                <option value="Dia1">Perna Completa e Panturrilha</option>
-                                <option value="Dia1">Ombro e Abdominal</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <input type="submit" value="Entrar">
-                </form>
-                <a href="#">Crie lista de treino</a>
-            </div>
-        </section>
+                <p>Escolha o treino de hoje</p>
+            </header>
+
+            <form id="form-treino" novalidate>
+                <fieldset class="treinos">
+                    <legend class="sr-only">Treinos disponíveis</legend>
+
+                    <label class="card" data-dia="1">
+                        <input type="radio" name="treino" value="costas-biceps" required>
+                        <span class="card-corpo">
+                            <span class="card-titulo">Costas e Bíceps</span>
+                            <span class="card-tag">Sugerido hoje</span>
+                        </span>
+                    </label>
+
+                    <label class="card" data-dia="2">
+                        <input type="radio" name="treino" value="peito-triceps">
+                        <span class="card-corpo">
+                            <span class="card-titulo">Peito e Tríceps</span>
+                            <span class="card-tag">Sugerido hoje</span>
+                        </span>
+                    </label>
+
+                    <label class="card" data-dia="3">
+                        <input type="radio" name="treino" value="perna-panturrilha">
+                        <span class="card-corpo">
+                            <span class="card-titulo">Perna completa e Panturrilha</span>
+                            <span class="card-tag">Sugerido hoje</span>
+                        </span>
+                    </label>
+
+                    <label class="card" data-dia="4">
+                        <input type="radio" name="treino" value="ombro-abdominal">
+                        <span class="card-corpo">
+                            <span class="card-titulo">Ombro e Abdominal</span>
+                            <span class="card-tag">Sugerido hoje</span>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <p id="erro" class="erro" role="alert" hidden>Escolha um treino para continuar.</p>
+
+                <button type="submit">Iniciar treino</button>
+            </form>
+
+            <!--<a class="link" href="../criar-lista-de-treino/criar-lista.html">Criar lista de treino</a>
+        </section>-->
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

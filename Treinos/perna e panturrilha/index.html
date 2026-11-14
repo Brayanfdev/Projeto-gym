@@ -3,83 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perna e Panturrilha</title>
-    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/treino.css">
+    <title>Costas e Bíceps</title>
 </head>
 <body>
-    <div id="container">
-        <table>
-            <caption>Treino Perna + Panturrilha</caption>
+    <main class="treino">
+        <h1 id="titulo">Perna e Panturrilha</h1>
+
+        <table aria-labelledby="titulo">
             <thead>
                 <tr>
-                    <th colspan="3">Perna</th>
-                </tr>
-                <tr>
-                    <th>Exercícios</th>
-                    <th class="center">Rep/Drop</th>
+                    <th scope="col">Exercício</th>
+                    <th scope="col">Séries e repetições</th>
+                    <th scope="col">Drop</th>
                 </tr>
             </thead>
+
             <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Perna</th></tr>
                 <tr>
-                    <td rowspan="2">Agachamento guiado</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12</td>
+                    <th scope="row">Agachamento guiado</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 6a8</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Leg 45º</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Leg press 45°</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
-                <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Hack</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12</td>
+                    <td data-label="Drop">2 drops: 1x 8a10 - 1x 10a12 - 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Hack</td>
-                    <td class="center">Rep: 1x 15a20 - 1x 12a15 - 1x 10a12</td>
+                    <th scope="row">Extensora</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12</td>
+                    <td data-label="Drop">2 drops: 1x 8a10 - 1x 10a12 - 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
+                    <th scope="row">Flexssora</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Repetição parcial até a falha - contração de 2 segundos </td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Cadeira Extensora</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <th scope="row">Adutor</th>
+                    <td data-label="Séries e reps">1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
+                    <th scope="row">Abdutor</th>
+                    <td data-label="Séries e reps">1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Panturrilha</th></tr>
                 <tr>
-                    <td rowspan="2">Cadeira Flexora</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12 com 2 segundos de contração</td>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Adutor e Abdutor</td>
-                    <td class="center">Rep: 1x 12a15 - 1x 12a15 - 1x 12a15</td>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <th colspan="3">Panturrilha</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">Panturrilha Sentado</td>
-                    <td class="center">Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Panturrilha em pé</td>
-                    <td class="center">Rep: 1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Panturrilha no squat</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 15a20 - 1x 15a20 - 1x 15a20</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <a class="retorna" href="../peito e triceps/index.html">Voltar</a>
-    <a class="avanca" href="../ombro e abdomem/index.html">Próximo</a>
+
+        <nav class="navegacao" aria-label="Navegação entre treinos">
+            <a class="retorna" href="../../escolha-treino/index.html">Voltar</a>
+            <a class="avanca" href="../ombro e abdomem/index.html">Próximo</a>
+        </nav>
+    </main>
 </body>
 </html>
+    

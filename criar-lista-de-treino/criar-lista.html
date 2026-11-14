@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar lista de treino</title>
+    <link rel="stylesheet" href="../escolha-treino/estilos/style.css">
+</head>
+<body>
+    <main>
+        <section class="painel largo">
+            <header>
+                <h1>Criar lista de treino</h1>
+                <p>Monte a lista de exercícios do seu treino</p>
+            </header>
+
+            <form id="form-lista" novalidate>
+                <div class="bloco">
+                    <label for="nome-lista">Nome da lista</label>
+                    <input id="nome-lista" name="nome" list="sugestoes" maxlength="40"
+                           autocomplete="off" required placeholder="Ex: Peito e Tríceps">
+                    <datalist id="sugestoes">
+                        <option value="Costas e Bíceps"></option>
+                        <option value="Peito e Tríceps"></option>
+                        <option value="Perna completa e Panturrilha"></option>
+                        <option value="Ombro e Abdominal"></option>
+                    </datalist>
+                </div>
+
+                <fieldset class="novo-exercicio">
+                    <legend>Adicionar exercício</legend>
+                    <div class="bloco nome-ex">
+                        <label for="exercicio">Exercício</label>
+                        <input id="exercicio" name="exercicio" maxlength="50" autocomplete="off" required>
+                    </div>
+                    <div class="bloco">
+                        <label for="series">Séries</label>
+                        <input id="series" name="series" type="number" inputmode="numeric" min="1" max="10" required>
+                    </div>
+                    <div class="bloco">
+                        <label for="reps">Repetições</label>
+                        <input id="reps" name="reps" type="number" inputmode="numeric" min="1" max="100" required>
+                    </div>
+                    <div class="bloco">
+                        <label for="carga">Carga (kg)</label>
+                        <input id="carga" name="carga" type="number" inputmode="decimal" min="0" max="500" step="0.5">
+                    </div>
+                    <button type="button" id="btn-add" class="secundario">Adicionar exercício</button>
+                </fieldset>
+
+                <ul id="lista-exercicios" aria-live="polite"></ul>
+                <p id="vazio" class="vazio">Nenhum exercício adicionado ainda.</p>
+
+                <p id="msg" role="status" hidden></p>
+                <button type="submit">Salvar lista</button>
+            </form>
+
+            <!--<a class="link" href="index.html">Voltar para a escolha do treino</a>
+        </section>-->
+    </main>
+
+    <template id="tpl-exercicio">
+        <li class="item">
+            <div>
+                <strong class="item-nome"></strong>
+                <span class="item-meta"></span>
+            </div>
+            <button type="button" class="remover">Remover</button>
+        </li>
+    </template>
+
+    <script src="criar-lista.js"></script>
+</body>
+</html>

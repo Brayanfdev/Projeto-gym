@@ -3,84 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ombro e Abdominal</title>
-    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/treino.css">
+    <title>Costas e Bíceps</title>
 </head>
 <body>
-    <div id="container">
-        <table>
-            <caption>Treino Ombro + Abdominal</caption>
+    <main class="treino">
+        <h1 id="titulo">Ombro e Abdomem</h1>
+
+        <table aria-labelledby="titulo">
             <thead>
                 <tr>
-                    <th colspan="3">Ombro</th>
-                </tr>
-                <tr>
-                    <th>Exercícios</th>
-                    <th class="center">Rep/Drop</th>
+                    <th scope="col">Exercício</th>
+                    <th scope="col">Séries e repetições</th>
+                    <th scope="col">Drop</th>
                 </tr>
             </thead>
+
             <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Ombro</th></tr>
                 <tr>
-                    <td rowspan="2">Desenvolvimento com halter</td>
-                    <td class="center">Rep: 1x 20a15 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <th scope="row">Desenvolvimento com alter</th>
+                    <td data-label="Séries e reps">1x 15a20 - 1x 12a15 - 1x 10a12 - 1x 8a10</td>
+                    <td data-label="Drop">2 drops: 1x 8a10 - 1x 10a12 - 1x 12a15</td>
                 </tr>
                 <tr>
-                    <td class="center">2 Drops - 1x 8a10 1x 10a12 1x 12a15</td>
+                    <th scope="row">Elevação frontal</th>
+                    <td data-label="Séries e reps">1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <td data-label="Drop">Contração de 2 segundos</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Elevação frontal com halter</td>
-                    <td class="center">Rep: 1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15 com 2 segundos de contração</td>
-                <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Crucifixo unilateral</th>
+                    <td data-label="Séries e reps">1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <td data-label="Drop">contração de 2 segundos</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Crucifixo unilateral</td>
-                    <td class="center">Rep: 1x 12a15 - 1x 12a15 - 1x 12a15</td>
+                    <th scope="row">Crusifixo inverso</th>
+                    <td data-label="Séries e reps">1x 8a15 - 1x 8a15 - 1x 8a15</td>
+                    <td data-label="Drop">3 drops: Drop em todas as repetições</td>
                 </tr>
                 <tr>
-                    <td class="center">Sem drop</td>
+                    <th scope="row">Elevação lateral</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Crucifixo inverso</td>
-                    <td class="center">Rep: 1x 15a8 - 1x 15a8 - 1x 15a8</td>
+                    <th scope="row">Encolhimento com alter</th>
+                    <td data-label="Séries e reps">1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="grupo"><th scope="colgroup" colspan="3">Abdomem</th></tr>
                 <tr>
-                    <td class="center">Drop em todas as séries</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Elevação Lateral sentado com halter</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem drop</td>
-                </tr><tr>
-                    <td rowspan="2">Encolhimento</td>
-                    <td class="center">Rep: 1x 12a15 - 1x 12a15 - 1x 12a15 - 1x 12a15</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem drop</td>
-                </tr>
-                <tr>
-                    <th colspan="3">Abdominal</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">Abdominal infra na paralela</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Abdominal infra na prnacha declinado</td>
-                    <td class="center">Rep: 1x 10a12 - 1x 10a12 - 1x 10a12 - 1x 10a12</td>
-                </tr>
-                <tr>
-                    <td class="center">Sem Drop</td>
+                    <th scope="row">Abdominal na paralela</th>
+                    <td data-label="Séries e reps">1x 12 - 1x 12 - 1x 12 - 1x 12</td>
+                    <td data-label="Drop">Sem drop</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <a class="retorna" href="../perna e panturrilha/index.html">Voltar</a>
-    <a class="avanca" href="../costas e biceps/index.html">Próximo</a>
+
+        <nav class="navegacao" aria-label="Navegação entre treinos">
+            <a class="retorna" href="../../escolha-treino/index.html">Voltar</a>
+            <a class="avanca" href="../costas e biceps/index.html">Próximo</a>
+        </nav>
+    </main>
 </body>
 </html>

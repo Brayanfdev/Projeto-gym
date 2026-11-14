@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <aside class="lateral">
+        <p class="marca">Meu Treino</p>
+        <nav class="menu" aria-label="Menu principal">
+            <a href="#home">Home</a>
+            <a href="#escolher">Escolher treino</a>
+            <a href="#criar">Criar treino</a>
+        </nav>
+    </aside>
+
+    <main class="conteudo">
+        <section id="home" class="aba" hidden>
+            <h1>Seu progresso</h1>
+
+            <div id="vazio-home" class="vazio" hidden>
+                <p>Você ainda não iniciou nenhum treino. Escolha um treino para começar a ver seus gráficos.</p>
+                <button type="button" id="btn-exemplo">Carregar dados de exemplo</button>
+            </div>
+
+            <div id="painel-home">
+                <div class="estatisticas">
+                    <div class="cartao"><span class="numero" id="est-semana">0</span><span>treinos esta semana</span></div>
+                    <div class="cartao"><span class="numero" id="est-mes">0</span><span>treinos neste mês</span></div>
+                    <div class="cartao"><span class="numero" id="est-top">-</span><span>treino mais frequente</span></div>
+                </div>
+
+                <div class="graficos">
+                    <div class="cartao">
+                        <h2>Treinos por semana</h2>
+                        <p class="sub">Últimas 8 semanas</p>
+                        <div id="grafico-semanas" class="barras" role="img"></div>
+                    </div>
+                    <div class="cartao">
+                        <h2>Treinos por grupo</h2>
+                        <p class="sub">Todo o histórico</p>
+                        <div id="grafico-grupos" class="horizontais" role="img"></div>
+                    </div>
+                </div>
+
+                <h2 class="titulo-secao">Últimos treinos</h2>
+                <ul id="ultimos" class="ultimos"></ul>
+                <button type="button" id="btn-limpar" class="link-btn" hidden>Apagar dados de exemplo</button>
+            </div>
+        </section>
+
+        <section id="escolher" class="aba quadro" hidden>
+            <iframe title="Escolher treino" data-src="../escolha-treino/index.html"></iframe>
+        </section>
+
+        <section id="criar" class="aba quadro" hidden>
+            <iframe title="Criar treino" data-src="../criar-lista-de-treino/criar-lista.html"></iframe>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
